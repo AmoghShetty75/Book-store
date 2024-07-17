@@ -3,7 +3,7 @@ const mongoose = require("mongoose")
 
 const Connection = async () => {
     try {
-        const connect = await mongoose.connect("mongodb+srv://amoghc174:wjkAQKKwHUQTgDbY@cluster0.lcozspr.mongodb.net/bookstore")
+        const connect = await mongoose.connect("")
         console.log("mongo server got connected succssfully");
     } catch (e) {
         console.log("some error with mongoose connection");
