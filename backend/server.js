@@ -1,8 +1,10 @@
 const express = require("express");
 const { mySchema } = require("./validation");
 const { Book } = require("./db");
+const cors = require('cors')
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 app.get('/getBooks',async(req,res)=>{
    const books=await Book.find({})
