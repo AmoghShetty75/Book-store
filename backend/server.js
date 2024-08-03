@@ -17,7 +17,6 @@ app.get('/getBooks',async(req,res)=>{
 app.post('/postBooks',async(req,res)=>{
    const userPayload = req.body;
    const {book,about,url} = req.body;
-   console.log(req.body);
    const payload = mySchema.safeParse(userPayload)
    console.log(payload,"kkkkkkkkkkkkkkkkkkkkk");
    if(!payload.success){
