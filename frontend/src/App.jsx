@@ -14,8 +14,7 @@ function App() {
     try{
           const res = await axios.get('http://localhost:3000/getBooks')
          const result = setCount(res.data.books)
-          console.log(result,"RESULT");
-    }catch(e){
+  }catch(e){
       console.log(`error is ${e}`);
 
     }
