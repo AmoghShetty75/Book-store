@@ -36,6 +36,7 @@ function App() {
 
     }catch(e){
       console.log("Error posting the response");
+      alert()
     }
   }
 
